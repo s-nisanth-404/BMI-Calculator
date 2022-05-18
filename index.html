@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
+
+    <title>BMI Calculator</title>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+        
+        <label id="heading">BMI Calculator</label>
+        <hr>
+        <h5 id="SubHeading">Units Type</h5>
+
+        <input type="button" value="US / UK - Units" class="btn Units active">
+        <input type="button" value="Metric - Units"  class="btn Metric">
+
+        <div class="first-unit">
+
+            <label>HEIGHT</label>
+            <div class="h">
+                <input type="number" placeholder="FEET" class="feet" min="0">
+                <input type="number" placeholder="INCHES" class="inches" min="0">
+            </div>
+
+            <label>WEIGHT</label>
+            <div class="w">
+                <input type="number" placeholder="POUNDS" class="pounds" min="0">
+            </div>
+
+            <div>
+            <input type="button" value="Calculate" class="btn calculate">
+            <input type="button" value="Reset" class="btn reset">
+            </div>
+
+                <label>BMI</label>
+                <input type="text" placeholder="BMI" class="bmi" readonly>
+
+            <label>BMI CATEGORY</label>
+            <input type="text" placeholder="BMI CATEGORY" class="bmiCategory" readonly>
+
+            <label>HEALTH RISK</label>
+            <input type="text" placeholder="HEALTH RISK" class="healthRisk" readonly>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
